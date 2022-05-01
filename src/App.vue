@@ -157,6 +157,7 @@ export default {
         function sendImageData() {
           index = 0;
           data = getImagePrintData();
+          console.log(data);
         //   getImagePrintData();
           return new Promise(function(resolve, reject) {
             sendNextImageDataBatch(resolve, reject);
